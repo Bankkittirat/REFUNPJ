@@ -5,26 +5,28 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
-
+import MapSreen from '../screens/MapSreen';
 import HomeScreen from '../screens/HomeScreen';
 import ChatScreen from '../screens/ChatScreen';
 import ProfileScreen from '../screens/ProfileScreen';
 import AddPostScreen from '../screens/AddPostScreen';
 import MessagesScreen from '../screens/MessagesScreen';
 import EditProfileScreen from '../screens/EditProfileScreen';
+import IconIo from 'react-native-vector-icons/dist/Ionicons';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
 const FeedStack = ({navigation}) => (
   <Stack.Navigator>
+    
     <Stack.Screen
-      name="RN Social"
+      name="REFUN MAN"
       component={HomeScreen}
       options={{
         headerTitleAlign: 'center',
         headerTitleStyle: {
-          color: '#2e64e5',
+          color: '#47A000',
           fontFamily: 'Kufam-SemiBoldItalic',
           fontSize: 18,
         },
@@ -38,8 +40,18 @@ const FeedStack = ({navigation}) => (
               name="plus"
               size={22}
               backgroundColor="#fff"
-              color="#2e64e5"
+              color="#47A000"
               onPress={() => navigation.navigate('AddPost')}
+            />
+          </View>
+        ), headerLeft: () => (
+          <View style={{marginRight: 10}}>
+            <FontAwesome5.Button
+              name="map"
+              size={22}
+              backgroundColor="#fff"
+              color="#47A000"
+              onPress={() => navigation.navigate('MAP')}
             />
           </View>
         ),
@@ -49,21 +61,34 @@ const FeedStack = ({navigation}) => (
       name="AddPost"
       component={AddPostScreen}
       options={{
-        title: '',
         headerTitleAlign: 'center',
+        headerTitleStyle: {
+          color: '#47A000',
+          fontFamily: 'Kufam-SemiBoldItalic',
+          fontSize: 18,
+        },
         headerStyle: {
-          backgroundColor: '#2e64e515',
-          shadowColor: '#2e64e515',
+          shadowColor: '#fff',
           elevation: 0,
         },
-        headerBackTitleVisible: false,
-        headerBackImage: () => (
+        headerRight: () => (
+          <View style={{marginRight: 10}}>
+            <IconIo.Button
+              name="ellipsis-vertical"
+              size={22}
+              backgroundColor="#fff"
+              color="#47A000"
+              onPress={() => navigation.navigate('AddPost')}
+            />
+          </View>
+        ), headerBackImage: () => (
           <View style={{marginLeft: 15}}>
-            <Ionicons name="arrow-back" size={25} color="#2e64e5" />
+            <Ionicons name="arrow-back" size={25} color="#47A000" />
           </View>
         ),
       }}
     />
+        
     <Stack.Screen
       name="HomeProfile"
       component={ProfileScreen}
@@ -78,7 +103,38 @@ const FeedStack = ({navigation}) => (
         headerBackTitleVisible: false,
         headerBackImage: () => (
           <View style={{marginLeft: 15}}>
-            <Ionicons name="arrow-back" size={25} color="#2e64e5" />
+            <Ionicons name="arrow-back" size={25} color="#47A000" />
+          </View>
+        ),
+      }}
+    />
+        <Stack.Screen
+      name="MAP"
+      component={MapSreen}
+      options={{
+        headerTitleAlign: 'center',
+        headerTitleStyle: {
+          color: '#47A000',
+          fontFamily: 'Kufam-SemiBoldItalic',
+          fontSize: 18,
+        },
+        headerStyle: {
+          shadowColor: '#fff',
+          elevation: 0,
+        },
+        headerRight: () => (
+          <View style={{marginRight: 10}}>
+            <IconIo.Button
+              name="ellipsis-vertical"
+              size={22}
+              backgroundColor="#fff"
+              color="#47A000"
+              onPress={() => navigation.navigate('AddPost')}
+            />
+          </View>
+        ), headerBackImage: () => (
+          <View style={{marginLeft: 15}}>
+            <Ionicons name="arrow-back" size={25} color="#47A000" />
           </View>
         ),
       }}
@@ -123,6 +179,7 @@ const ProfileStack = ({navigation}) => (
         },
       }}
     />
+    
   </Stack.Navigator>
 );
 
@@ -141,7 +198,7 @@ const AppStack = () => {
   return (
     <Tab.Navigator
       tabBarOptions={{
-        activeTintColor: '#2e64e5',
+        activeTintColor: '#47A000',
       }}>
       <Tab.Screen
         name="Home"

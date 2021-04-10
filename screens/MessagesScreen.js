@@ -16,43 +16,43 @@ import {
 const Messages = [
   {
     id: '1',
-    userName: 'Jenny Doe',
+    userName: 'Jamess',
     userImg: require('../assets/users/user-3.jpg'),
     messageTime: '4 mins ago',
     messageText:
-      'Hey there, this is my test for a post of my social app in React Native.',
+      'อยู่ไหน',
   },
   {
     id: '2',
-    userName: 'John Doe',
+    userName: 'Suphamongkhon Khotasit',
     userImg: require('../assets/users/user-1.jpg'),
     messageTime: '2 hours ago',
     messageText:
-      'Hey there, this is my test for a post of my social app in React Native.',
+      'ลงมาๆ',
   },
   {
     id: '3',
-    userName: 'Ken William',
+    userName: 'พงศนาศ ขันอาสา',
     userImg: require('../assets/users/user-4.jpg'),
     messageTime: '1 hours ago',
     messageText:
-      'Hey there, this is my test for a post of my social app in React Native.',
+      'อ้อเครๆ ',
   },
   {
     id: '4',
-    userName: 'Selina Paul',
+    userName: 'Worawit Panomrungchai',
     userImg: require('../assets/users/user-6.jpg'),
     messageTime: '1 day ago',
     messageText:
-      'Hey there, this is my test for a post of my social app in React Native.',
+      'เจอกั๊น',
   },
   {
     id: '5',
-    userName: 'Christy Alex',
+    userName: 'Assdawut Homesub',
     userImg: require('../assets/users/user-7.jpg'),
     messageTime: '2 days ago',
     messageText:
-      'Hey there, this is my test for a post of my social app in React Native.',
+      'สำนักคอม',
   },
 ];
 

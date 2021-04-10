@@ -72,15 +72,15 @@ const PostCard = ({item, onDelete, onPress}) => {
           source={{
             uri: userData
               ? userData.userImg ||
-                'https://lh5.googleusercontent.com/-b0PKyNuQv5s/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclxAM4M1SCBGAO7Rp-QP6zgBEUkOQ/s96-c/photo.jpg'
-              : 'https://lh5.googleusercontent.com/-b0PKyNuQv5s/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclxAM4M1SCBGAO7Rp-QP6zgBEUkOQ/s96-c/photo.jpg',
+                'https://scontent.fubp1-1.fna.fbcdn.net/v/t1.6435-9/110305810_3168800929906726_8701252481894735241_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=09cbfe&_nc_eui2=AeEECzkJnSc_-5JEEkypqOZgLZb-X58GHRItlv5fnwYdEubpDEvEhI7q-axAuKovdT4XimD7kZaQ7fLvBofHejrS&_nc_ohc=WPDCCjqoMnsAX8tItdr&_nc_ht=scontent.fubp1-1.fna&oh=cf0a25b7b20768fdee0a9f757c0b1760&oe=6098C074'
+              : 'https://scontent.fubp1-1.fna.fbcdn.net/v/t1.6435-9/110305810_3168800929906726_8701252481894735241_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=09cbfe&_nc_eui2=AeEECzkJnSc_-5JEEkypqOZgLZb-X58GHRItlv5fnwYdEubpDEvEhI7q-axAuKovdT4XimD7kZaQ7fLvBofHejrS&_nc_ohc=WPDCCjqoMnsAX8tItdr&_nc_ht=scontent.fubp1-1.fna&oh=cf0a25b7b20768fdee0a9f757c0b1760&oe=6098C074',
           }}
         />
         <UserInfoText>
           <TouchableOpacity onPress={onPress}>
             <UserName>
-              {userData ? userData.fname || 'Test' : 'Test'}{' '}
-              {userData ? userData.lname || 'User' : 'User'}
+              {userData ? userData.fname || 'Bank' : 'Bank'}{' '}
+              {userData ? userData.lname || 'kittirat' : 'Kittirat'}
             </UserName>
           </TouchableOpacity>
           <PostTime>{moment(item.postTime.toDate()).fromNow()}</PostTime>

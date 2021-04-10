@@ -11,12 +11,12 @@ const ChatScreen = () => {
     setMessages([
       {
         _id: 1,
-        text: 'Hello developer',
+        text: 'อยู่ไหน',
         createdAt: new Date(),
         user: {
           _id: 2,
           name: 'React Native',
-          avatar: 'https://placeimg.com/140/140/any',
+          avatar: 'https://scontent.fubp1-1.fna.fbcdn.net/v/t1.6435-9/156388550_1174804212977023_2041124519245458723_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=KiBnoOzOc9gAX8n2X56&_nc_ht=scontent.fubp1-1.fna&oh=3c62de9f32bb924b04e9e0bd62967e91&oe=6095CFCF',
         },
       },
       {

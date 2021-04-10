@@ -22,7 +22,7 @@ import {Container} from '../styles/FeedStyles';
 const Posts = [
   {
     id: '1',
-    userName: 'Jenny Doe',
+    userName: 'Jamess',
     userImg: require('../assets/users/user-3.jpg'),
     postTime: '4 mins ago',
     post:
@@ -34,7 +34,7 @@ const Posts = [
   },
   {
     id: '2',
-    userName: 'John Doe',
+    userName: 'Supamong Kotasit',
     userImg: require('../assets/users/user-1.jpg'),
     postTime: '2 hours ago',
     post:
@@ -112,7 +112,7 @@ const HomeScreen = ({navigation}) => {
               userId,
               userName: 'Test Name',
               userImg:
-                'https://lh5.googleusercontent.com/-b0PKyNuQv5s/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclxAM4M1SCBGAO7Rp-QP6zgBEUkOQ/s96-c/photo.jpg',
+                'https://scontent.fubp1-1.fna.fbcdn.net/v/t1.6435-9/110305810_3168800929906726_8701252481894735241_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=09cbfe&_nc_eui2=AeEECzkJnSc_-5JEEkypqOZgLZb-X58GHRItlv5fnwYdEubpDEvEhI7q-axAuKovdT4XimD7kZaQ7fLvBofHejrS&_nc_ohc=WPDCCjqoMnsAX8tItdr&_nc_ht=scontent.fubp1-1.fna&oh=cf0a25b7b20768fdee0a9f757c0b1760&oe=6098C074',
               postTime: postTime,
               post,
               postImg,

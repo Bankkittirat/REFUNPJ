@@ -22,10 +22,11 @@ const LoginScreen = ({navigation}) => {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <Image
-        source={require('../assets/rn-social-logo.png')}
+        source={require('../assets/cropped-refun-logo.png')}
         style={styles.logo}
       />
-      <Text style={styles.text}>RN Social App</Text>
+      <Text></Text>
+      <Text style={styles.text}>REFUN MAN</Text>
 
       <FormInput
         labelValue={email}
@@ -95,8 +96,8 @@ const styles = StyleSheet.create({
     paddingTop: 50
   },
   logo: {
-    height: 150,
-    width: 150,
+    height: 82,
+    width: 257,
     resizeMode: 'cover',
   },
   text: {
